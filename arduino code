@@ -1,0 +1,41 @@
+int redledpin=7;
+int yellowledpin=8;
+int greenledpin=9;
+int redontime=3000;
+int yellowontime=1000;
+int greenontime=1000;
+int redofftime=500;
+int yellowofftime=500;
+int greenofftime=500;
+
+
+
+
+
+
+void setup() {
+  pinMode(redledpin,OUTPUT);
+  pinMode(yellowledpin,OUTPUT);
+  pinMode(greenledpin,OUTPUT);
+
+  
+
+}
+
+void loop() {
+  digitalWrite(redledpin,HIGH);
+  delay(redontime);
+  digitalWrite(redledpin,LOW);
+  delay(redofftime);
+  digitalWrite(yellowledpin,HIGH);
+  delay(yellowontime);
+  digitalWrite(yellowledpin,LOW);
+  delay(yellowofftime);
+  digitalWrite(greenledpin,HIGH);
+  delay(greenontime);
+  digitalWrite(greenledpin,LOW);
+  delay(greenofftime);
+
+
+
+}
